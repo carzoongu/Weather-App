@@ -89,7 +89,7 @@ const getUserCoordinates = () => {
                 alert("An error occurred while fetching the city name!");
             });
         },
-        error => { // Show alert if user denied the location permission
+        error => {
             if (error.code === error.PERMISSION_DENIED) {
                 alert("Geolocation request denied. Please reset location permission to grant access again.");
             } else {
